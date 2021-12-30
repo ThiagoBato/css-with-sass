@@ -1,5 +1,10 @@
-@import '_reset.css';
-@import 'grid.scss';
-@import 'variaveis_mixins.scss';
-@import 'geral.scss';
-@import 'intro.scss';
+@import '_reset';
+@import 'grid';
+@import 'variaveis_mixins';
+@import 'geral';
+
+//Partes
+@import 'intro';
+@import 'menu';
+@import 'contato';
+@import 'footer';

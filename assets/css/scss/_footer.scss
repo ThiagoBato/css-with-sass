@@ -1,0 +1,23 @@
+footer {
+    background: $cinza;
+    color: $bege-claro;
+    padding: 20px 0;
+    @include box-shadow(0 0 0 10px $cinza);
+    @include device(sm) {
+        text-align: center;
+    }
+    p {
+        display: inline-block;
+    }
+    a {
+        float: right;
+        @include device(sm) {
+            float: none;
+        }
+        img {
+            @include device(sm) {
+                margin: 20px auto;
+            }
+        }
+    }
+}

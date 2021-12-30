@@ -1,0 +1,72 @@
+.contato {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    @include device(sm) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+.contato form {
+    label {
+        @include tipo-1(18);
+        display: block;
+    }
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        @include tipo-1(18);
+        background: transparent;
+        border: 2px solid $bege-escuro;
+        color: $cinza;
+        height: 40px;
+        margin-bottom: 1rem;
+        padding: 0 5px;
+        width: 100%;
+        &:hover,
+        &:focus {
+            border-color: $bege-medio;
+            outline: none;
+        }
+    }
+    textarea {
+        height: 120px;
+        resize: vertical;
+    }
+}
+input.button {
+    @include tipo-1(18);
+    background: transparent;
+    border: 2px solid $bege-escuro;
+    color: $bege-escuro;
+    cursor: pointer;
+    display: block;
+    padding: 5px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    width: 200px;
+    @include box-shadow(5px 5px 0 -2px $bege-medio, 5px 5px 0 0 $bege-escuro);
+    &:hover {
+        @include box-shadow(3px 3px 0 -2px $bege-medio, 3px 3px 0 0 $bege-escuro);
+    }
+}
+.contato__info {
+    color: $bege-escuro;
+    float: right;
+    margin-bottom: 3em;
+    margin-top: -3em;
+    text-align: right;
+    @include device(sm) {
+        float: none;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+        text-align: left;
+    }
+}
+.contato__mapa {
+    display: block;
+    @include box-shadow(0 0 0 10px $bege-medio);
+    clear: both;
+    img {
+        width: 100%;
+    }
+}

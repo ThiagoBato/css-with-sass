@@ -3,7 +3,7 @@ $bege-claro: #edece4;
 $bege-medio: #cbc6b9;
 $bege-escuro: #988c77;
 $cinza: #2a2426;
-$verde: green;
+$verde: #1ab912;
 
 //Fontes
 $font-1: 'Aref Ruqaa', Courier, serif;
@@ -31,4 +31,13 @@ $font-2: 'PT Mono', monospace;
         font-size: em(24);
         line-height: em(30, 24);
     }
+}
+
+//Mixin Box-Shadow
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    box-shadow: $shadow;
 }
