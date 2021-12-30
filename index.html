@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Le Scone - Restaurante" />
+        <title>Le Scone</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=PT+Mono&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <main class="container">
+            <section class="intro">
+                <div class="grid-5">
+                    <img class="logo" src="assets/img/lescone.png" alt="Le Scone" />
+                    <div class="intro__info">
+                        <p>
+                            De seg. à Sab. <span class="aberto"></span><br />
+                            das 07:00h às 18:00
+                        </p>
+                        <p>Praia de Botafogo, 300<br />Rio de Janeiro - RJ</p>
+                    </div>
+                    <p class="intro__telefone">+55 021 2412-3333</p>
+                </div>
+                <div class="grid-7">
+                    <img src="assets/img/foto.jpg" alt />
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="grid-4 titulo">Menu</h2>
+                <div class="grid-7 offset-1">
+                    <div class="menu__item">
+                        <img src="assets/img/prato-1.jpg" alt="Prato 1" />
+                        <h3>Entradas</h3>
+                        <ul>
+                            <li><span>R$ 1,70</span> Ovos Mexidos</li>
+                            <li><span>R$ 2,70</span> Scones de Frutas</li>
+                            <li><span>R$ 3,70</span> Joelho de Queijo</li>
+                            <li><span>R$ 4,70</span> Presentu Cozido</li>
+                            <li><span>R$ 3,70</span> Coxinha de Frango</li>
+                        </ul>
+                    </div>
+                    <div class="menu__item">
+                        <img src="assets/img/prato-2.jpg" alt="Prato 2" />
+                        <h3>Pratos Principais</h3>
+                        <ul>
+                            <li><span>R$ 10,70</span> Penne com Queijo</li>
+                            <li><span>R$ 20,70</span> Feijoada</li>
+                            <li><span>R$ 30,70</span> Costela ao Molho</li>
+                            <li><span>R$ 40,70</span> Medalhão de Frango</li>
+                            <li><span>R$ 30,70</span> Coxinha de Frango</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="contato">
+                <h2 class="grid-4 titulo">Contato</h2>
+                <div class="grid-7 offset-1">
+                    <form action="">
+                        <label for="nomeFormulario">Nome</label>
+                        <input type="text" name="Nome" id="nomeFormulario" />
+                        <div class="row">
+                            <div class="grid-7">
+                                <label for="emailFormulario">Email</label>
+                                <input type="email" name="Email" id="emailFormulario" />
+                            </div>
+                            <div class="grid-5">
+                                <label for="telefoneFormulario">Telefone</label>
+                                <input type="text" name="Telefone" id="telefoneFormulario" />
+                            </div>
+                        </div>
+                        <label for="mensagemFormulario">Mensagem</label>
+                        <textarea name="mensagem" id="mensagemFormulario" cols="30" rows="10"></textarea>
+                        <input class="button" type="button" value="Enviar" />
+                    </form>
+                    <div class="contato__info">
+                        <p>contato@lescone.com ////</p>
+                        <p>+55 021 2412-3333 ////</p>
+                    </div>
+                    <a href="#" class="contato__mapa">
+                        <img src="assets/img/map.jpg" alt="Como chegar em Le Scone" />
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>Le Scone &copy; 1989 - 2016. Alguns direitos reservados</p>
+                <a href="#top">
+                    <img src="assets/img/lescone-icone.png" alt="Voltar ao topo" />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
